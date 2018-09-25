@@ -14,5 +14,5 @@ class Student(models.Model):
     age = models.PositiveIntegerField()
     school = models.ForeignKey(School, related_name='students')
 
-    def __str(self):
+    def __str__(self):
         return self.name
