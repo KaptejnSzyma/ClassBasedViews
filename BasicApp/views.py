@@ -22,4 +22,5 @@ class SchoolDetailView(DetailView):
 
 
 class SchoolCreateView(CreateView):
+    fields = ('name', 'principal', 'location')
     model = models.School
